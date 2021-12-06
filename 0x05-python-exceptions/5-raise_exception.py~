@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+def raise_exception():
+    try:
+        if TypeError is True:
+            return True
+    except:
+        print()
+
+            
