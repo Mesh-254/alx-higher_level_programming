@@ -2,6 +2,7 @@
 """
 check instance of a class 
 """
+
 def inherits_from(obj, a_class):
     """
     function that returns True if the object is an instance
