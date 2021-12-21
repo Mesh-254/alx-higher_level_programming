@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-"""
-function that appends a string at the end of a text file 
-and returns the number of characters added:
-"""
+"""a function to append text to file"""
+
+
 def append_write(filename="", text=""):
-    """
-    function that appends a string at the end of a text file
-    returns the number of characters added
-    """
-    
+    """a function to append text to file """
     with open(filename, "a", encoding="utf-8") as f:
         f.write(text)
-    return len(text)
+        return len(text)
     
