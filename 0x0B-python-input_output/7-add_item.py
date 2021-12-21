@@ -4,7 +4,6 @@ Adds all arguments to a Python list,
 and then save them
 """
 import sys
-from os.path import exists
 
 
 save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
