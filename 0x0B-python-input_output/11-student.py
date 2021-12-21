@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A student class defines student """
 
+
 class Student:
     """ A student class defines student class """
     
@@ -22,8 +23,7 @@ class Student:
         return new_d
 
     def reload_from_json(self, json):
-        """
-        Replaces all attributes of the Student instance.
+        """ Replaces all attributes of the Student instance.
         """
         for x in json:
             self.__dict__.update({x: json[x]})
