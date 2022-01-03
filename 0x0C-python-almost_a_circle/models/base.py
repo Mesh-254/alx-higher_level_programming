@@ -3,7 +3,6 @@
 This module contains the "Base" class
 """
 
-
 class Base:
     __nb_objects = 0
 
@@ -14,3 +13,5 @@ class Base:
             self.id = self.__nb_objects
         else:
             self.id = id
+            
+    
