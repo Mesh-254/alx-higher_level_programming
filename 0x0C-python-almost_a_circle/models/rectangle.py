@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+"""
+ class Rectangle that inherits from Base
+"""
+from models import Base
+
+
+class Rectangle(Base):
+    """initialize the representation class rectangle"""
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """ initialize the representation class rectangle """
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y 
+        super().__init__(id)
+    
+    @property
+    def width(self, value):
+        """width getter"""
+        return self.__width
+
+    @width.setter
+def
