@@ -78,5 +78,35 @@ class Rectangle(Base):
 
     def display(self):
         """Display The Rectangle Using  '#'"""
+        for k in range(self.__y):
+            print()
+        for i in range(self.__height):
+            print(" " * self.__x, end="")
+            for j in range(self.__width):
+                print("#", end="")
+            print()
+
+    def __str__(self):
+        """ return the string representation of the Rectangle"""
+        return "{} ({}) {}/{} - {}/{}".format(self.__class__.__name__, self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args, **kwargs):
+        """ update the rectangle with keyword and non keyword arguments."""
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        elif len(args) != 0:
+            try:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            except IndexError:
+                pass
+
+    def to_dictionary(self):
+        """ return dictionary representation of rectangle"""
+        return self.__dict__
         
 
